@@ -28,8 +28,7 @@ const ajouterFournisseur = async () => {
         });
 
         if (response.ok) {
-            const updatedFournisseur = await response.json();
-            console.log('Fournisseur mis à jour:', updatedFournisseur);
+        
             await _updateListeFournisseurs();
             fournisseur.value = {
                 libelle: '',
