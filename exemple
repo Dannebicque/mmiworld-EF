@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <td></td>
+        <td v-for="(j jndex) in 10">matière {{ j }}</td>
+    </tr>
+    <tr v-for="(i, index) in 5">
+        <td>Prof {{i}}</td>
+        <td v-for="(j jndex) in 10" :id="`prof_${i}_mat_${j}">
+            {{ tableau[i][j] }}
+        </td>
+    </tr>
+</table>

@@ -6,6 +6,7 @@ import { ref } from 'vue'
     <div>
         <router-link to="/">Accueil</router-link> | 
         <router-link :to="{name: 'pays'}">Les pays</router-link> | 
+        <router-link :to="{name: 'regions'}">Les régions</router-link> | 
         <router-link :to="{name: 'recherche'}">Rechercher</router-link> | 
         <router-link :to="{name: 'fournisseurs'}">Fournisseurs</router-link> | 
         <router-link :to="{name: 'about'}">A propos</router-link> | 

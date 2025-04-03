@@ -23,6 +23,18 @@ const router = createRouter({
       name: 'recherche'
     },
     {
+      path: '/regions',
+      component: () => import('@/views/RegionView.vue'),
+      name: 'regions',
+      children: [
+        {
+          path: '/fiche-region/:region',
+          component: () => import('@/views/FicheRegionView.vue'),
+          name: 'fiche-region'
+        }
+      ]
+    },
+    {
       path: '/fournisseurs',
       component: () => import('@/views/FournisseursView.vue'),
       name: 'fournisseurs'
